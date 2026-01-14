@@ -26,7 +26,7 @@ def main():
     args = parse_args()
 
     # Set MLflow tracking URI from env or use default
-    tracking_uri = os.getenv("MLFLOW_TRACKING_URI", "http://localhost:7006")
+    tracking_uri = os.getenv("MLFLOW_TRACKING_URI", "http://127.0.0.1:8080")
     mlflow.set_tracking_uri(tracking_uri)
     mlflow.set_experiment(args.experiment)
 

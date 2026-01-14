@@ -1,1 +1,7 @@
 data/wine_sample.csv
+# macOS
+.DS_Store
+
+# Python virtual environments
+.venv/
+.venv_new/
